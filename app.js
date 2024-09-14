@@ -7,19 +7,46 @@ for (i = 0; i < 256; i++) {
   container.appendChild(gridItem);
 }
 
+const button = document.createElement("button");
+button.classList.toggle("button");
+button.textContent = "Redo"
+container.insertAdjacentElement("beforebegin", button)
+
 // change color of grid item on hover
 const hoverItem = document.querySelectorAll(".grid-item");
 
-hoverItem.forEach((item) => {
-  item.addEventListener("mouseover", () => {
-    item.style.backgroundColor = "#aa83c5";
-    item.style.color = "#ffebcd";
-  });
-});
+// hoverItem.forEach((item) => {
+//   let isColored = false;
+
+//   item.addEventListener("mouseover", () => {
+//     if (!isColored) {
+//       item.style.backgroundColor = "#aa83c5";
+//       item.style.color = "#ffebcd";
+//       isColored = true;
+//     }
+//     if (isColored) {
+//       item.addEventListener("mouseout", () => {
+//         item.style.backgroundColor = "";
+//         item.style.color = "";
+//         isColored = false;
+//       });
+
+//     }
+//     })
+//   })
 
 hoverItem.forEach((item) => {
-  item.addEventListener("mouseout", () => {
-    item.style.backgroundColor = "";
-    item.style.color = "";
+  let isColored = false;
+
+  item.addEventListener("mouseover", () => {
+    if (!isColored) {
+      item.style.backgroundColor = "#aa83c5";
+      item.style.color = "#ffebcd";
+      isColored = true;
+    } else {
+      item.style.backgroundColor = "";
+      item.style.color = "";
+      isColored = false;
+    }
   });
 });
