@@ -4,16 +4,16 @@
 }
 
 .container {
-  background-color: #f0f0f0;
-  text-align: center;
+  background-color: #645f5f;
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
-  height: 50%;
+ height: 700px;
+width: 700px;
+  margin-top: 50px;
+  margin: 0 auto;
 }
 
 .grid-item {
-  flex-basis: calc(100% / 16);
-  width: 20px;
-  height: 20px;
+  border: solid black 1px;
+flex: 1 1 auto;
 }
