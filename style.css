@@ -7,13 +7,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color:antiquewhite;
+  background-color: antiquewhite;
 }
 
 .header {
   font-family: "Playwrite CU", cursive;
   margin-top: 100px;
-  color:rgba(46, 44, 44, 0.91)
+  color: rgba(46, 44, 44, 0.91);
 }
 
 .button-div {
@@ -21,12 +21,12 @@ body {
 }
 
 .button {
-border: none;
-background-color: #314c4d;
-color: #f0e7e7;
-font-size: 18px;
-padding: 10px;
-border-radius: 5px;
+  border: none;
+  background-color: #314c4d;
+  color: #f0e7e7;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .container {
@@ -35,9 +35,4 @@ border-radius: 5px;
   flex-wrap: wrap;
   height: 600px;
   width: 600px;
-
-}
-
-.grid-item {
-  /* flex: 1 1 auto; */
 }
